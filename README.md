@@ -282,12 +282,17 @@ AI 답글 후보 생성 (N개)
 ## 📂 프로젝트 구조
 
 ```text
-├── frontend/        # React 프론트엔드
-├── backend/         # Flask API 서버
-├── ai/
-│   ├── sentiment/   # KoBERT 기반 감정 분석
-│   ├── rag/         # RAG 기반 응답 생성
-│   └── langgraph/   # LangGraph 흐름 제어
+project-root/
+├── backend/
+│   ├── venv/              # Python 가상환경
+│   ├── app.py             # Flask 엔트리 포인트
+│   ├── requirements.txt   # Python 라이브러리
+│   └── ai/                # KoBERT, RAG, LangGraph
+│
+├── frontend/
+│   ├── package.json
+│   ├── src/
+│   └── build/             # React 빌드 결과
+│
 └── README.md
 ```
-
